@@ -475,7 +475,7 @@ OGRErr OGRKMLLayer::ICreateFeature( OGRFeature* poFeature )
             VSIFPrintfL( fp, "<LineStyle><color>ff0000ff</color></LineStyle>");
         delete poPen;
         //If we're dealing with a polygon, add a line style that will stand out a bit
-        VSIFPrintfL( fp, "<PolyStyle><fill>0</fill></PolyStyle></Style>\n" );
+        // VSIFPrintfL( fp, "<PolyStyle><fill>0</fill></PolyStyle></Style>\n" );
     }
 
     int bHasFoundOtherField = FALSE;
